@@ -1,11 +1,13 @@
+import random
 """
 CP1404/CP5632 - Practical
 Broken program to determine score status
 """
 def main():
-    score = float(input("Enter score: "))
+    score = score = float(input("Enter score: "))
+    #score = random.randint(0, 100)
     sorted_score = sort_score(score)
-    print(sorted_score)
+    print(f"Your score {score} has the grade {sort_score()}")
 
 def sort_score(score):
     if score < 0:
