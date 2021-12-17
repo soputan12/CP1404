@@ -13,7 +13,7 @@ def main():
         print(f"{name} ({email})")
 
 def sort_email(email):
-    pre_email = email.split('@')[0] #you split the wrong letter
+    pre_email = email.split('@')[0]
     split_dot = pre_email.split('.')
     name = " ".join(split_dot).title()
     return name
