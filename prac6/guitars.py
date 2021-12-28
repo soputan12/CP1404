@@ -20,12 +20,13 @@ def main():
 
     if guitar_list:
         print("Guitar list:")
-        for count, guitar in enumerate(guitar_list):
+        for i, guitar in enumerate(guitar_list):
             vintage_guitars = ""
             if guitar.is_vintage():
                 vintage_guitars = "Vintage"
-            print(f"Guitar {count + 1}: {guitar.name:>20} ({guitar.year}), Cost:${guitar.cost:10,.2f} {vintage_guitars}") #try to fix it until it looks right
-
+            print(f"Guitar {i + 1}: {guitar.name:>20} ({guitar.year}), Cost:${guitar.cost:10,.2f} {vintage_guitars}") #try to fix it until it looks right
+    else:
+        print("No Guitars.")
 def check_year():
     year = int(input("Year: "))
     while year <= 0:
