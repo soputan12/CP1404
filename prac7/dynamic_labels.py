@@ -1,6 +1,5 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.button import Button
 from kivy.uix.label import Label
 from kivy.properties import StringProperty
 
@@ -26,7 +25,6 @@ class DynamicLabelsApp(App):
 
     def press_entry(self, instance):
         name = instance.text
-        self.status_text = "{}'s number is {}".format(name, self.name[name])
 
     def clear_all(self):
         self.root.ids.entries_box.clear_widgets()
