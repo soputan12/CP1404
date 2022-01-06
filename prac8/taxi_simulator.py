@@ -12,7 +12,7 @@ def main():
         if user_input == "c":
             print("Taxis available:")
             display_taxis(taxis)
-            taxi = int(input("Choose taxi\n>>>"))
+            taxi = int(input("Choose taxi\n>>>")) #INFINITE LOOP NEED TO FIX
             try:
                 current_taxi = taxis[taxi]
             except IndexError:
