@@ -30,7 +30,7 @@ def phrase_to_sentence(phrase):
 
     >>> phrase_to_sentence("It is an ex parrot.")
 
-    >>> phrase_to_sentence("tEstING")
+    >>> phrase_to_sentence("tEstINg")
     """
     sentence = phrase.capitalize()
     if sentence[-1] != ".":

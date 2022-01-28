@@ -1,7 +1,7 @@
 import wikipedia
 
 # print(wikipedia.search("Virus"))
-# print(wikipedia.summary("worm"))
+# print(wikipedia.summary("malware"))
 # print(wikipedia.page("New York"))
 
 user_input = input(">>>")
